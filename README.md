@@ -3,23 +3,25 @@
 
 ## 用法及注意事项
 * 在project的build.gradle添加如下代码
-```groovy
-allprojects {
-    repositories {
-        jcenter()
-        maven { url "https://jitpack.io" }
-    }
-}
-```
+
+	>allprojects {
+     repositories {
+         jcenter()
+         maven { url "https://jitpack.io" }
+     }
+	 }
+
 * 在build.gradle添加依赖
 
+	>compile 'com.github.yy941002:retrofit-OurRetrofit:v1.0.0'
+	
 * 需要的权限
-```xml
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-```
+
+	><uses-permission android:name="android.permission.INTERNET" />
+	><uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	><uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	><uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
 ## 全局配置
 
 ###初始化
